@@ -1,0 +1,43 @@
+<form id="myForm">
+    Desired username: <input type="text" name="username" required maxlength="20"><br><br>
+    Choose password: <input type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[0-9])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required> <br>
+    <label for="question"><br><br>
+    Secret question: 
+    <select name="secretQuestion">
+      <option value="What is your mother's maiden name?">What is your mother's maiden name?</option>
+      <option value="What is your favorite color?">What is your favorite color?</option>
+      <option value="What is your favorite food?">What is your favorite food?</option>
+    </select><br><br>
+    Answer: <input type="text" name="answer" required><br><br>
+
+    Personal Details & Tutor Contact Information<br><br>
+    Name: <input type="text" name="name" required><br><br>
+    Gender:
+    <input type="radio" name="gender" value="Male">Male
+    <input type="radio" name="gender" value="Female">Female<br><br>
+    Age:  <select name="secretQuestion" required>
+        <option value="select age">select age</option>
+        <option value="20">21</option>
+        <option value="21">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+      </select><br><br>
+    Country: <input type="text" name="country" value="India"><br><br>
+    Location: <select name="secretQuestion" required >
+        <option value="select your Location">select your location</option>
+        <option value="Bengaluru">Bengaluru</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Chennai">Chennai</option>
+      </select><br><br>
+    Postal/Zip code: <input type="text" name="postalCode" required><br><br>
+    Area: <input type="text" name="area" ><br><br>
+    Present address: <input type="text" name="presentAddress" required><br><br>
+    Contact Number: <input type="text" name="contactNumber" pattern="[0-9]{10}" required><br><br>
+    Email address: <input type="email" name="email" required><br><br>
+    Upload Photo: <input type="file" name="photo" data-max-size="2048" ><br><br>
+    <input type="submit" value="Continue">
+    <!-- <script src="assi.js"></script> -->
+  </form>
+  
+  
